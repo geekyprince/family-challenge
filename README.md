@@ -39,5 +39,9 @@ To run the tests that are provided in the repo
 ```python
 python -m unittest
 ```
+To run the Integration Test (First run the program and then run this)
+```python
+python -m unittest current_folder/tests/IntegrationTest.py
+```
 </li>
 
