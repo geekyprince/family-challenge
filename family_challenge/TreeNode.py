@@ -3,6 +3,6 @@ class TreeNode:
         self.father = father
         self.mother = mother
         self.gender = gender
-        self.son = {}
-        self.daughter = {}
+        self.son = set()
+        self.daughter = set()
         self.spouse = spouse
