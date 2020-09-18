@@ -20,8 +20,9 @@ class Uncle(Relationship):
     def get_relative_names(self, name, family_dict):
         grandfather = GrandFather(self.connection).get_relative_names(name, family_dict)
         if grandfather:
-            return None
-        return family_dict[grandfather].son ^ {family_dict[name].father}
+            return family_dict[grandfather].son - {family_dict[name].father}
+        return None
+        
          
 class Aunt(Relationship):
     def __init__(self, connection):

@@ -14,12 +14,12 @@ Reference: https://www.geektrust.in/coding-problem/backend/family
 
 # Usage
 
-The Family Hierarchy data is present in the FamilyData.txt
+The initial Family Hierarchy data is present in the FamilyData.txt
 
 There are no hardcoded values inside the program :)
 
 1)Child can be added through mother already in the family.
-2)Name of relatives can be retrived by provide name of person and relationship to retrieve
+2)Name of relatives can be retrived by provided name of person and relationship to retrieve
 
 <ul>
 <li>
