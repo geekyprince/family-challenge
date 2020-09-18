@@ -3,7 +3,14 @@ from family_challenge.Relationships import SisterInLaw, BrotherInLaw
 from family_challenge.Relationships import Son, Daughter, Siblings
 
 class Relation:
-    def __init__(self, relation):
+    def __init__(self, relation): 
+        """
+        __init__ Automatically initializes the given relationship
+        class object and assign it to relation(class variable)
+
+        Args:
+            relation (String): relationship to initialize
+        """
         if relation == 'Paternal-Uncle':
             self.relation = Uncle('Paternal') 
         elif relation == 'Maternal-Uncle':

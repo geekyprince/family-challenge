@@ -1,4 +1,5 @@
-from family_challenge.FileParser import FileParser
+from collections import defaultdict
+from family_challenge.FileReader import FileReader
 from family_challenge.TreeNode import TreeNode
 import os
 
@@ -13,9 +14,9 @@ class Family:
             member name: TreeNode
             }
         """
-        self.file_parser = FileParser()
-        self.family_dict = dict()
-        self.__parse_family_file(
+        self.file_reader = FileReader()
+        self.family_dict = defaultdict(int)
+        self.__read_family_file(
             "".join([os.getcwd(), "/FamilyData.txt"])
         )
 
@@ -31,7 +32,7 @@ class Family:
         #add member to family_dict
         self.family_dict[name] = TreeNode(father, mother, gender, spouse)
 
-    def __parse_family_file(self, file_path):
-        file_contents = self.file_parser.parse_file(file_path)
+    def __read_family_file(self, file_path):
+        file_contents = self.file_reader.read_file(file_path)
         for line in file_contents[1:]:  #first line is column names
             self.add_member(*line.split()) 

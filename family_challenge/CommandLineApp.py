@@ -1,22 +1,22 @@
-from family_challenge.FileParser import FileParser
+from family_challenge.FileReader import FileReader
 import sys
 
-class CommandLineParser:
+class CommandLineApp:
     def __init__(self):
         """
         __init__ --> Gets the filePath from Command Line.
         Initializes an instance of the file parser to
         get the file contents
         """
-        self.file_name = sys.argv[1]
-        self.file_parser = FileParser()
+        self.file_path = sys.argv[1]
+        self.file_reader = FileReader()
 
-    def get_file_contents(self):
+    def get_file_data(self):
         """
-        get_file_contents --> Uses an instance of FileParser Class,
+        get_file_contents --> Uses an instance of FileReader Class,
         to get the File's content
 
         :return: Contents of the File
         :rtype: List
         """
-        return self.file_parser.parse_file(self.file_name)
+        return self.file_reader.read_file(self.file_path)
