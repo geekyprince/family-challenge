@@ -1,3 +1,7 @@
+# Geektrust Evaluation
+<img width="1511" alt="image" src="https://github.com/geekyprince/family-challenge/assets/44468899/42cee38e-5ed2-4997-8e5f-f9ab6bfec947">
+
+
 # Problem Statement
 
 Our coding challenges are set in the planet of Lengaburu. King Shan is the emperor and has been ruling for the last 350 years (they have long lives in Lengaburu you see)!
